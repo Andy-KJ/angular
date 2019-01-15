@@ -1,0 +1,39 @@
+{
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "cache": { 
+        "optimizeFor": "freshness",
+        "maxAgeMs": 360000000,                     
+        "maxEntries": 1,                     
+        "strategy": "lru"
+      },  
+      "resources": {
+        "files": [
+          "/favicon.ico",
+          "/index.html",
+          "/*.css",
+          "/*.js"
+        ]
+      },
+      "external": {         
+        "urls": [
+                {"url": "https://fonts.googleapis.com/..."},
+                {"url": "https://fonts.gstatic.com/s/..."}         
+        ]     
+   }
+    }, {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/assets/**"
+        ]
+      }
+    }
+  ]
+}
+
