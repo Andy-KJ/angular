@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+/* .row{
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 5px;
+    box-shadow: 3px 3px rgb(195, 195, 195);
+} */
+html,
+body {
+  overflow-x: hidden;
+  color: #000;
+  height: 100%;
+  position:relative;
+  -ms-overflow-style: scrollbar;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.alert-success.flash-message{
+    color:white;
+    background: lightgreen;
+}

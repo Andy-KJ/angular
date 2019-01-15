@@ -1,0 +1,13 @@
+.ab{
+    margin-left: 0.5em;
+    margin-right: -0.5em;
+}
+
+img.rounded-circle{
+    width: 45px;
+}
+
+.username{
+    padding-right: 10px;
+    padding-left:10px;
+}

@@ -1,0 +1,42 @@
+h1{
+    line-height: 0.8;
+}
+
+.card{
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 5px;
+    box-shadow: 3px 3px rgb(195, 195, 195);
+}
+
+.btn{
+    margin-bottom: 0.5em;
+}
+
+.btn-facebook{
+    background: #3b5998;
+}
+
+.btn-google{
+    background: #dd4b39;
+}
+
+.btn-twitter{
+    background: #55acee;
+}
+
+.btn-twitter, .btn-google, .btn-facebook{
+    color: white;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.row{
+   margin-left: 0px;
+}
+
+.kotak{
+    padding: 5px;
+}
+

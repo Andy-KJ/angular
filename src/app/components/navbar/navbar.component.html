@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" routerLink="/home-page">Angular v0.2</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor02">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="home-page">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+          <a class="nav-link" routerLink="private-page">Private <span class="sr-only"></span></a>
+        </li>
+    </ul>
+    <a *ngIf="isLogin" style="color:white;"> your uid: {{userUid}}</a>
+    <img a *ngIf="isLogin" src="{{userPhoto}}" class="rounded-circle">
+    <!-- <span a *ngIf="isLogin" class="badge pill badge-secondary">{{userEmail}}</span> -->
+    <div *ngIf="isLogin" class="username">
+      <a style="color:white; font-weight:bold;">{{userName}}</a><br>
+      <span  class="badge pill badge-secondary">{{userEmail}}</span>
+      <!-- <small *ngIf="isLogin" style="color:white;"> {{userEmail}} </small> -->
+    </div>
+      <button *ngIf="!isLogin" class="btn btn-secondary my-2 my-sm-0" type="button" routerLink="login-page">Login</button>
+      <button *ngIf="!isLogin" class="btn btn-secondary my-2 my-sm-0 ab" type="button" routerLink="register-page">Register</button>
+      <button *ngIf="isLogin" routerLink="home-page" class="btn btn-secondary my-2 my-sm-0 ab" type="button" (click)="onClickLogout()">Logout</button>
+    </div>
+</nav>

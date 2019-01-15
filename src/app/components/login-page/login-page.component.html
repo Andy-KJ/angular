@@ -1,0 +1,34 @@
+<div class="kotak">
+<div class="row">
+  <div class="col-md-3 mx-auto mt-2">
+    <div class="card">
+      <div class="card-body">
+        <h1 class="text-center">LOGIN</h1>
+        <hr>
+          <form (submit)="onSubmitLogin()">
+            <button style="width:100%;" class="btn btn-lg btn-facebook bold" (click)="onClickFacebookLogin()"><i class="fa fa-facebook"></i> Facebook</button>
+            <button style="width:100%;" class="btn btn-lg btn-google bold" (click)="onClickGoogleLogin()"><i class="fa fa-google"></i> Google</button>
+            <button style="width:100%;" class="btn btn-lg btn-twitter bold"><i class="fa fa-twitter"></i> Twitter</button>
+            
+            <p class="bold text-center" style="margin-top:10px; margin-bottom:8px;"> or Sign In with </p>
+            
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" name="email" class="form-control" id="email" [(ngModel)]="email" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" class="form-control" id="password" [(ngModel)]="password" placeholder="Password">
+                <a role="button" style="background-color:white; border:none; font-size:10px; cursor: pointer;" routerLink="/forget-password">Forget Password ?</a>
+              </div>
+              <button style="width:100%;" type="submit" class="btn btn-lg btn-primary">Submit</button>
+              <div class="card-body text-center">
+                Don't have an account ? <a role="button" routerLink="/register-page"> Register Now</a>
+              </div>
+          </form>          
+      </div>
+    </div>
+  </div>
+</div>
+</div>
